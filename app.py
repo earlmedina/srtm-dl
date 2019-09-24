@@ -36,7 +36,6 @@ def background_process():
     dl = landsat_dl(name, output, xmin, ymin, xmax, ymax)
     return dl
 
-#-87.577, 41.72, -87.504, 41.76 
 
 
 @app.route('/download/<path:filename>',methods=['GET','POST'])
@@ -48,6 +47,8 @@ def download(filename):
 
 if __name__ == '__main__':
     app.run(
+      host='0.0.0.0',  
+      port=5005,
       debug=True
     )
 

@@ -1,0 +1,73 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0
+}
+
+
+#map {
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+}
+
+
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-polyline {
+  display:none;
+}
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-polygon {
+  display:none;
+}
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-circle {
+  display:none;
+}
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-circlemarker {
+  display:none;
+}
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-marker {
+  display:none;
+}
+
+.leaflet-tooltip{
+    width: 100px;
+    white-space: normal;
+}               
+
+
+#m {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0.0%;
+    top: 0.0%;]
+}
+
+
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('../loader.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading .modal {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
